@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- The first thing in any HTML file should be the charset -->
+    <meta charset="utf-8">
+    <!-- Make the page mobile compatible -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>NightOwl - Band Managment Software</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/night-owl-logo.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/night-owl-logo.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/night-owl-logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/night-owl-logo.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/night-owl-logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/night-owl-logo.png" />
+    <link rel="manifest" href="/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/favicons/night-owl-logo.png" />
+    <meta name="theme-color" content="#2196F3" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <style>
+      #app { position: absolute;top:0;left: 0;background: #fafafa;width: 100%;min-height: 100%;z-index: 1000; display: flex;}
+      .preloader-init { position: absolute; top: calc(50% - 65px); left: calc(50% - 65px) }
+    </style>
+  </head>
+  <body>
+    <!-- Display a message if JS has been disabled on the browser. -->
+    <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
+
+    <!-- The app hooks into this div -->
+    <div id="app">
+      <img src="/images/spinner.gif" class="preloader-init" alt="spinner" />
+    </div>
+    <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
+  </body>
+</html>
